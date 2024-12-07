@@ -1,5 +1,5 @@
 # Electrosoluciones
-Esta es una página web diseñada como una herramienta de presentación para servicios eléctricos .  
+Esta es una página web diseñada como una herramienta de presentación para soluciones eléctricas.  
 
 ## Tecnologías
 - HTML
