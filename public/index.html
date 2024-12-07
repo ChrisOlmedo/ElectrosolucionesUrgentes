@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ElectrosolucionesUrgentes</title>
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- bootstrap css -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        >
+        <!-- font css -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="images/thumbnail_Logopit_1611089485214.png" type="image/gif">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/11.0.2/firebase-app-compat.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/11.0.2/firebase-auth-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-database-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-firestore-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-functions-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-messaging-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-analytics-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-remote-config-compat.js"></script>
+        <script defer src="/__/firebase/11.0.2/firebase-performance-compat.js"></script>
+        <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <div class="header">
+                <a href>
+                    <img src="images/thumbnail_Logopit_1611089485214.png" alt="#">
+                </a>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- whatsapp float-->
+        <div class="fbw">
+            <a href="https://wa.me/5213328365815" target="_blank" rel="noopener">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    style="width:80; height:80; filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));"
+                    viewBox="0 0 48 48"
+                >
+                    <path fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24	c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path>
+                    <path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path>
+                    <path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3	l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path>
+                    <path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8l6-1.6l0.6,0.3	c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path>
+                    <path
+                        fill="#fff"
+                        fill-rule="evenodd"
+                        d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4	s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6	s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4	c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8	C20.6,19.3,19.7,17,19.3,16z"
+                        clip-rule="evenodd"
+                    ></path>
+                </svg>
+            </a>
+        </div>
+        <!-- end whatsapp float-->
+        <!-- banner -->
+        <section class="banner_main px-3 mb-5">
+            <div class="card mx-auto my-3 text-center px-0 py-3 px-sm-5" style="max-width: 400px; background-color: rgba(255, 255, 255, .8);">
+                <div class="card-body">
+                    <a
+                        href="tel:+523328365825"
+                        class="text-decoration-none text-dark-emphasis"
+                        aria-label="Llámanos al 3328365815"
+                        target="_blank"
+                    >3328365815</a>
+                    <h2 class="blue font-weight-bold mt-3">
+                        ¡Atención
+               inmediata!
+                    </h2>
+                    <h2 class="blue font-weight-bold mt-5">
+                        Electricistas
+               en:
+                    </h2>
+                    <h2 class="blue mt-3">Zapopan</h2>
+                    <h2 class="blue font-weight-bold ">GDL</h2>
+                    <h2 class="blue font-weight-bold">Tlaquepaque</h2>
+                    <p class="mt-5">¿Necesitas un electricista?</p>
+                    <p class="mt-5 mx-3">¡Llámanos a electro soluciones urgentes!</p>
+                    <a class="our-services mt-5" href="#service">
+                        Nuestros
+               servicios
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end banner -->
+        <!-- about section -->
+        <div id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="titlepage text-center">
+                        <hr class="absolute-item">
+                        <h2>
+                            <i class="fa fa-bolt blue me-2" aria-hidden="true"></i>
+                            Quiénes
+                            <span class="blue">Somos</span>
+                        </h2>
+                    </div>
+                    <div class="col-md-10 offset-md-1 text-center mb-5">
+                        <h3 class="my3-5 blue h3">
+                            Bienvenido a Electro Soluciones Urgentes
+                        </h3>
+                        <p>
+                            Electro soluciones urgentes está conformado por
+                 ingenieros (ingeniero electricista), técnicos
+                 (electricistas) y distintos especialistas que brindan
+                 soluciones en cualquier tipo de trabajos eléctricos.
+                 Todos cuentan con más de 5 años de experiencia como
+                 electricista, lo cual garantiza la solución de cualquier
+                 problema de una forma rápida, limpia y segura.
+                        </p>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <div class="about_img">
+                            <figure>
+                                <img src="images/about_img.png" alt="#">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about section -->
+        <!-- service section -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="row pb-0 pb-md-5">
+                    <div class="titlepage text-center">
+                        <hr class="absolute-item">
+                        <h2>
+                            <i class="fa fa-bolt blue me-2" aria-hidden="true"></i>
+                            Nuestros
+                            <span class="blue">Servicios</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row service-card flex-column-reverse flex-md-row">
+                    <div class="col-md-6">
+                        <div class="service_img">
+                            <img src="images/sevaluzpachucaporapagonnacional.jpg" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_text px-3 px-md-0 mb-5 mb-md-0">
+                            <h3>Bajones de luz</h3>
+                            <p>
+                                ¿Estás cansado de las variaciones eléctricas que dañan tus electrodomésticos y equipos electrónicos? ¡No te preocupes más! En Electro Soluciones Urgentes, somos expertos en la reparación de variaciones eléctricas y estamos aquí para ayudarte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-card mt-5 pt-5">
+                    <div class="col-md-6">
+                        <div class="service_text px-3 px-md-0 mb-5 mb-md-0">
+                            <h3>Reestablecer servicio de luz</h3>
+                            <p>
+                                ¿Estás cansado de quedarte a oscuras cuando se produce un corte de energía? ¡No te preocupes más! En Electro Soluciones Urgentes, nos especializamos en la reparación de problemas relacionados con la falta de luz y estamos aquí para ayudarte.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_img">
+                            <img src="images/50453155_303.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-card flex-column-reverse flex-md-row mt-5 pt-5">
+                    <div class="col-md-6">
+                        <div class="service_img">
+                            <img src="images/cr=w_388,h_194.webp" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_text px-3 px-md-0 mb-5 mb-md-0">
+                            <h3>Alimentación eléctrica de aires acondicionados</h3>
+                            <p>
+                                ¿Estás pensando en instalar un nuevo aire acondicionado en tu hogar u oficina? En Electro Soluciones Urgentes, ofrecemos servicios profesionales de instalación de alimentación eléctrica para aires acondicionados, asegurando un rendimiento óptimo y un ambiente fresco y confortable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-card mt-5 pt-5">
+                    <div class="col-md-6">
+                        <div class="service_text px-3 px-md-0 mb-5 mb-md-0">
+                            <h3>Mantenimiento preventivo y correctivo de instalaciones eléctricas</h3>
+                            <p>
+                                En Electro Soluciones Urgentes, nos preocupamos por la seguridad y el rendimiento óptimo de tus instalaciones eléctricas. Ofrecemos servicios profesionales de mantenimiento preventivo y correctivo para garantizar que tus sistemas eléctricos funcionen de manera eficiente y segura.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_img">
+                            <img src="images/depositphotos_42220331-stock-photo-two-electri.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-card flex-column-reverse flex-md-row mt-5 pt-5">
+                    <div class="col-md-6">
+                        <div class="service_img">
+                            <img src="images/lamparas_techo.jpg" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_text px-3 px-md-0 mb-5 mb-md-0">
+                            <h3>Instalación de iluminación y equipos eléctricos</h3>
+                            <p>
+                                En Electro Soluciones Urgentes, nos especializamos en la instalación profesional de iluminación y equipos eléctricos para satisfacer todas tus necesidades. Ya sea que estés buscando mejorar la iluminación de tu hogar, renovar la iluminación de tu oficina o instalar nuevos equipos eléctricos, estamos aquí para ayudarte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-card mt-5 pt-5">
+                    <div class="col-md-6">
+                        <div class="service_text px-3 px-md-0 mb-5 mb-md-0">
+                            <h3>Instalación eléctrica residencial e industrial</h3>
+                            <p>
+                                En Electro Soluciones Urgentes, somos especialistas en la instalación eléctrica para todo tipo de proyectos, ya sea residencial o industrial. Nuestro equipo de expertos en electricidad se encargará de garantizar una instalación segura, eficiente y confiable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_img">
+                            <img src="images\pexels-pixabay-257736.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end service section -->
+        <!--contact us-->
+        <div class="contact">
+            <div class="container">
+                <div class="titlepage text-center">
+                    <hr class="absolute-item">
+                    <h2>
+                        <i class="fa fa-bolt blue me-2" aria-hidden="true"></i>
+                        Comunícate con
+                        <span class="blue">Nosotros</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="container-contact">
+                <div class="form">
+                    <div class="contact-info">
+                        <h3 class="title">Electrosoluciones Urgentes</h3>
+                        <div class="info mt-1">
+                            <div class="social-information">
+                                <i class="fa fa-map-marker"></i>
+                                <p>Calle Santa Mónica 340, 45140 Zapopan, Jalisco, Mexico</p>
+                            </div>
+                            <a
+                                class="social-information link"
+                                href="mailto:electrosolucionesurgentes@gmail.com"
+                                aria-label="Llámanos al 3328365815"
+                                target="_blank"
+                            >
+                                <i class="fa fa-envelope-o"></i>
+                                <p>electrosolucionesurgentes@gmail.com</p>
+                            </a>
+                            <a
+                                class="social-information link"
+                                href="tel:+523328365825"
+                                aria-label="Llámanos al 3328365815"
+                                target="_blank"
+                            >
+                                <i class="fa fa-mobile-phone"></i>
+                                <p>
+                                    +52 3328365815
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-info-form">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+                        <form action="#" onclick="return false;" autocomplete="off">
+                            <h3 class="title">Envíanos un mensaje</h3>
+                            <div class="social-input-containers">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="input"
+                                    placeholder="Name"
+                                >
+                            </div>
+                            <div class="social-input-containers">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="input"
+                                    placeholder="Email"
+                                >
+                            </div>
+                            <div class="social-input-containers">
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    class="input"
+                                    placeholder="Phone"
+                                >
+                            </div>
+                            <div class="social-input-containers textarea">
+                                <textarea name="message" class="input" placeholder="Message"></textarea>
+                            </div>
+                            <input type="submit" value="Send" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5105.947612887356!2d-103.42046652368981!3d20.747447697379222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8064bf35e882c3d1%3A0x4c7a710e555f1a01!2sElectro%20soluciones%20urgentes!5e1!3m2!1ses-419!2smx!4v1733089215519!5m2!1ses-419!2smx"
+            width="100%"
+            height="450"
+            style="border: 0; margin: 0 0 -10px 0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <!--end contact us-->
+        <!--  footer -->
+        <footer>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                © 2024 Todos los Derechos Resevados. Electrosoluciones Urgentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js/custom.js"></script>
+        <!-- firebase form-->
+        <script src="js/form.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
+        <!-- firebase conection-->
+        <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         const loadEl = document.querySelector('#load');
+         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+         // // The Firebase SDK is initialized and available here!
+         //
+         // firebase.auth().onAuthStateChanged(user => { });
+         // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+         // firebase.firestore().doc('/foo/bar').get().then(() => { });
+         // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+         // firebase.messaging().requestPermission().then(() => { });
+         // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+         // firebase.analytics(); // call to activate
+         // firebase.analytics().logEvent('tutorial_completed');
+         // firebase.performance(); // call to activate
+         //
+         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+         try {
+            let app = firebase.app();
+            let features = [
+               'auth',
+               'database',
+               'firestore',
+               'functions',
+               'messaging',
+               'storage',
+               'analytics',
+               'remoteConfig',
+               'performance',
+            ].filter(feature => typeof app[feature] === 'function');
+            loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+         } catch (e) {
+            console.error(e);
+            loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+         }
+      });
+        </script>
+    </body>
+</html>
