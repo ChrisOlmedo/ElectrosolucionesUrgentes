@@ -267,70 +267,31 @@
             </div>
             <div class="container-contact">
                 <div class="form">
-                    <div class="contact-info">
-                        <h3 class="title">Electrosoluciones Urgentes</h3>
-                        <div class="info mt-1">
-                            <div class="social-information">
-                                <i class="fa fa-map-marker"></i>
-                                <p>Calle Santa Mónica 340, 45140 Zapopan, Jalisco, Mexico</p>
-                            </div>
-                            <a
-                                class="social-information link"
-                                href="mailto:electrosolucionesurgentes@gmail.com"
-                                aria-label="Llámanos al 3328365815"
-                                target="_blank"
-                            >
-                                <i class="fa fa-envelope-o"></i>
-                                <p>electrosolucionesurgentes@gmail.com</p>
-                            </a>
-                            <a
-                                class="social-information link"
-                                href="tel:+523328365825"
-                                aria-label="Llámanos al 3328365815"
-                                target="_blank"
-                            >
-                                <i class="fa fa-mobile-phone"></i>
-                                <p>
-                                    +52 3328365815
-                                </p>
-                            </a>
-                        </div>
+                    <h3 class="title">Electrosoluciones Urgentes</h3>
+                    <div class="social-information">
+                        <i class="fa fa-map-marker"></i>
+                        <p>Calle Santa Mónica 340, 45140 Zapopan, Jalisco, Mexico</p>
                     </div>
-                    <div class="contact-info-form">
-                        <span class="circle one"></span>
-                        <span class="circle two"></span>
-                        <form action="#" onclick="return false;" autocomplete="off">
-                            <h3 class="title">Envíanos un mensaje</h3>
-                            <div class="social-input-containers">
-                                <input
-                                    type="text"
-                                    name="name"
-                                    class="input"
-                                    placeholder="Name"
-                                >
-                            </div>
-                            <div class="social-input-containers">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    class="input"
-                                    placeholder="Email"
-                                >
-                            </div>
-                            <div class="social-input-containers">
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    class="input"
-                                    placeholder="Phone"
-                                >
-                            </div>
-                            <div class="social-input-containers textarea">
-                                <textarea name="message" class="input" placeholder="Message"></textarea>
-                            </div>
-                            <input type="submit" value="Send" class="btn">
-                        </form>
-                    </div>
+                    <a
+                        class="social-information link"
+                        href="mailto:electrosolucionesurgentes@gmail.com"
+                        aria-label="Llámanos al 3328365815"
+                        target="_blank"
+                    >
+                        <i class="fa fa-envelope-o"></i>
+                        <p>electrosolucionesurgentes@gmail.com</p>
+                    </a>
+                    <a
+                        class="social-information link"
+                        href="tel:+523328365825"
+                        aria-label="Llámanos al 3328365815"
+                        target="_blank"
+                    >
+                        <i class="fa fa-mobile-phone"></i>
+                        <p>
+                            +52 3328365815
+                        </p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -351,7 +312,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <p>
-                                © 2024 Todos los Derechos Resevados. Electrosoluciones Urgentes.
+                                &copy;
+                                <span id="yearDate"></span>
+                                Todos los Derechos Resevados. Electrosoluciones Urgentes.
                             </p>
                         </div>
                     </div>
@@ -361,11 +324,6 @@
         <!-- end footer -->
         <!-- bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="js/custom.js"></script>
-        <!-- firebase form-->
-        <script src="js/form.js" defer></script>
-        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
         <!-- firebase conection-->
         <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -405,5 +363,6 @@
          }
       });
         </script>
+        <script src="js/script.js"></script>
     </body>
 </html>
